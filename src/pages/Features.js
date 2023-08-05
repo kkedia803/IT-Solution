@@ -52,8 +52,8 @@ const GridComponent = () => {
 
     ];
 
-    const rows = 4;
-    const cols = 4;
+    // const rows = 4;
+    // const cols = 4;
 
     const gridStyle = {
         display: 'grid',
