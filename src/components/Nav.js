@@ -3,19 +3,9 @@ import React, { useState, useEffect } from 'react';
 // import { HiMiniBars4 } from "react-icons/hi";
 
 import { Link } from 'react-router-dom';
-const Navbar = () => {
+const Nav = () => {
 
     const [isOpen, setIsOpen] = useState(false);
-    const navbar = [
-        { 'id': '1', 'nav': 'Intro', 'link': '#' },
-        { 'id': '2', 'nav': 'About Us', 'link': '#about' },
-        { 'id': '3', 'nav': 'Services', 'link': '#services' },
-        { 'id': '4', 'nav': 'Features', 'link': '#features' },
-        { 'id': '5', 'nav': 'Demo', 'link': '#Demo' },
-        // { 'id': '5', 'nav': 'Meet The Team', 'link': '/team' },
-        // { 'id': '5', 'nav': 'Get In Touch' }
-    ];
-    // 
 
     const toggleHomeu = () => {
         setIsOpen(!isOpen);
@@ -50,23 +40,9 @@ const Navbar = () => {
                         </div>
                         <div className="hidden md:block mx-auto">
                             <div className="ml-10 flex items-baseline space-x-4">
-                                {navbar.map(data => {
-
-                                    return (
-                                        <a key={data.id}
-                                            href={data.link}
-                                            className="font-bold hover:text-[#ec634b] transition-all px-3 py-2 rounded-md text-base"
-                                        >
-                                            <span>{data.nav}</span>
-                                            <span className="absolute left-0 -bottom-1 w-full h-2 bg-[#ec634b] -z-10 group-hover:h-full group-hover:transition-all"></span>
-                                        </a>
-
-                                    )
-                                })}
-
                                 <Link
                                     to="/contact"
-                                    className="text-white font-semibold bg-[#6527BE] hover:bg-white border-2 border-[#9681EB] transition-all hover:text-[#6527BE] px-5 py-[5px] rounded-md text-base"
+                                    className="mr-36 text-white font-semibold bg-[#6527BE] hover:bg-white border-2 border-[#9681EB] transition-all hover:text-[#6527BE] px-5 py-[5px] rounded-md text-base"
                                 >
                                     Get In Touch
                                 </Link>
@@ -133,29 +109,18 @@ const Navbar = () => {
             >
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
 
-                    {navbar.map(data => {
-                        return (
-
-                            <a key={data.id}
-                                href={data.link}
-                                className="text-[#15133C] font-semibold hover:text-[#EC994B] transition-all block px-3 py-2 rounded-md text-base"
-                            >
-                                {data.nav}
-                            </a>
-                        )
-                    })}
                     <Link
                         to="/"
-                        className="w-fit text-white font-semibold bg-[#EC994B] hover:bg-white border-2 border-[#EC994B] transition-all hover:text-[#EC994B] block px-5 py-[5px] rounded-md text-base"
+                        className="w-fit text-white font-semibold bg-[#EC994B] hover:bg-white border-2 border-[#EC994B] transition-all hover:text-[#EC994B] block px-5 py-[5px] rounded-md text-base "
                     >
                         Get In Touch
                     </Link>
 
-                    
+
                 </div>
             </div>
         </nav>
     );
 };
 
-export default Navbar;
+export default Nav;
