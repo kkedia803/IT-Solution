@@ -145,7 +145,7 @@ const Navbar = () => {
                         )
                     })}
                     <Link
-                        to="/"
+                        to="/contact"
                         className="w-fit text-white font-semibold bg-[#EC994B] hover:bg-white border-2 border-[#EC994B] transition-all hover:text-[#EC994B] block px-5 py-[5px] rounded-md text-base"
                     >
                         Get In Touch

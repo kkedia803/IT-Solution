@@ -41,7 +41,7 @@ const Nav = () => {
                         <div className="hidden md:block mx-auto">
                             <div className="ml-10 flex items-baseline space-x-4">
                                 <Link
-                                    to="/contact"
+                                    to="/"
                                     className="mr-36 text-white font-semibold bg-[#6527BE] hover:bg-white border-2 border-[#9681EB] transition-all hover:text-[#6527BE] px-5 py-[5px] rounded-md text-base"
                                 >
                                     Get In Touch
